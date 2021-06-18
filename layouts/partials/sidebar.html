@@ -1,7 +1,12 @@
 <div class="sidebar{{ with .Site.Params.doNotLoadAnimations }} . {{ else }} animated fadeInDown {{ end }}">
     <div class="logo-title">
         <div class="title">
-            <img src="{{ .Site.Params.profilePicture | relURL }}" alt="profile picture">
+        <style> 
+        #mainPP:hover {
+          transform: rotate(720deg);
+        }
+        </style>
+            <img id="mainPP" src="{{ .Site.Params.profilePicture | relURL }}" style="transition: transform 6s" alt="profile picture"  >
             <h3 title=""><a href="/">{{ .Site.Params.Title }}</a></h3>
             <div class="description">
                 <p>{{ replace .Site.Params.description "\n" "<br>" | safeHTML }}</p>
