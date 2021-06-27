@@ -73,7 +73,7 @@
 html[data-theme='dark'] {
   /* Dark -> monokai */
   --chr-def-color: #f8f8f2;
-  --chr-def-bg-color: #272822;
+  --chr-def-bg-color: #777777;
   --chr-err-color: #960050;
   --chr-err-bg-color: #1e0010;
   --chr-hl-bg-color: #ffffcc;
